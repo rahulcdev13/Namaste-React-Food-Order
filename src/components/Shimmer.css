@@ -1,0 +1,35 @@
+.card-no{
+    background-color: rgb(241, 237, 237);
+    height: 250px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.main-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.heading{
+    background-color: rgb(241, 237, 237);
+    margin-top: 20px;
+    height: 30px;
+    width: 25%;
+    border-radius: 20px;
+}
+.sliderheading{
+    background-color: rgb(241, 237, 237);
+    margin-top: 20px;
+    height: 30px;
+    width: 10%;
+    border-radius: 20px;
+}
+.headings{
+    background-color: rgb(241, 237, 237);
+    margin-top: 20px;
+    height: 30px;
+    width: 30%;
+    border-radius: 10px;
+}
+.billing{
+    display: flex;
+    justify-content: space-between;
+}

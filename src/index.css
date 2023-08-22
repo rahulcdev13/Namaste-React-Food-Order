@@ -1,13 +1,454 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.Restaurant-List {
+  background-color: #fdfcfc;
+}
+.restaurant-menu {
+  background-color: #fdfcfc;
+}
+.cart-container {
+  background-color: #fdfcfc;
+}
+.cart-details {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 0 2px 2px #e3e3e2;
+  height: auto;
+}
+.cards {
+  margin-bottom: 20px;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 0 5px 5px #ece9e7;
+  background-color: white;
+}
+.cards:hover {
+  color: orangered;
+  font-weight: bolder;
+}
+.CardDecoration-None {
+  text-decoration: none;
+  color: rgb(49, 48, 48);
+}
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+.card-img-top {
+  border-radius: 10px;
+  /* display: block; */
+}
+.img-container .card-img-top {
+  transition: 0.2s all ease-in-out;
+}
+.img-container:hover .card-img-top {
+  transform: scale(1.08);
+}
+.offer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 13px;
+  background-color: orangered;
+  border-radius: 0px 7px 7px 0px;
+}
+.starlogo {
+  margin-bottom: 5px;
+}
+ul > li > Link {
+  text-decoration: none;
+}
+.card-title {
+  font-weight: bold;
+  white-space: nowrap;
+  /* width: 250px; */
+  /* margin-top: 10px; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cuisines {
+  white-space: nowrap;
+  width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.searchFilter {
+  display: flex;
+  margin-bottom: 30px;
+}
+/* input {
+  padding: 20px;
+} */
+.filterbtn {
+  border: 1px solid rgb(240, 46, 46);
+  padding: 7px;
+  text-align: center;
+  border-radius: 30px;
+  margin-right: 10px;
+  font-weight: 400;
+}
+.filterbtn:hover {
+  color: white;
+  font-weight: 500;
+  background-color: orangered;
+}
+.filterbtns:hover {
+  border: 1px solid white;
+  font-weight: 500;
+  background-color: rgb(250, 233, 227);
+}
+.error-page {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Navbar CSS */
+.header-container {
+  border-bottom: 1px solid gray;
+  height: 85px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo {
+  margin-left: 10px;
+  display: flex;
+}
+.current-location {
+  margin-left: 30px;
+  margin-top: 17px;
+  display: flex;
+}
+.current-location:hover {
+  color: orangered;
+}
+.mainAddress {
+  /* text-decoration: underline; */
+  font-weight: bolder;
+}
+.addresss {
+  /* margin-top: 2px; */
+  color: gray;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.addresss:hover {
+  color: orangered;
+}
+.avgrating {
+  background-color: rgb(40, 101, 40);
+  padding: 3px;
+  text-align: center;
+  border-radius: 4px;
+  color: white;
+  width: 16%;
+  /* margin-top: 5px; */
+  float: right;
+}
+.foodHeading {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.navbar {
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list {
+  text-decoration: none;
+  display: flex;
+  list-style-type: none;
+}
+.links {
+  text-decoration: none;
+  color: gray;
+}
+.links:hover {
+  color: orangered;
+}
+.linkss:hover {
+  color: orangered;
+}
+
+ul > li {
+  padding: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+/* Footer CSS */
+.footer {
+  padding: 5px;
+  width: 100%;
+  background-color: rgb(5, 5, 5);
+  color: white;
+  text-align: center;
+}
+/* Slider CSS */
+.img-fluid {
+  border-radius: 20px;
+}
+.searchCard {
+  padding: 1.5em 0.5em 0.5em;
+  border-radius: 2em;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.circular_image {
+  float: left;
+  width: 90px;
+  height: 122px;
+  border-radius: 50%;
+}
+.cardbody {
+  float: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.logolink {
+  text-decoration: none;
+  margin-left: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: orangered;
+  font-weight: bolder;
+  border-color: aliceblue;
+}
+/* Cart CSS */
+.cart-container {
+  text-align: center;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+.card-detail {
+  display: flex;
+  justify-content: space-between;
+}
+.card-detailss {
+  display: flex;
+}
+.restaurant-info {
+  display: flex;
+  justify-content: space-between;
+}
+.menucontainer {
+  display: flex;
+}
+.bill-section {
+  width: 400px;
+  height: 650px;
+  padding: 15px;
+  box-shadow: 0 0 2px 2px #e3e3e2;
+  background-color: white;
+}
+.home-path {
+  text-align: left;
+}
+
+.time-and-price {
+  font-weight: bolder;
+}
+.search-like {
+  display: flex;
+  justify-content: space-between;
+}
+.offer-upto {
+  box-shadow: 0 0 2px 2px #ece9e7;
+  padding: 2px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0px;
+}
+.upto-off {
+  font-weight: bolder;
+  color: rgb(109, 108, 108);
+  font-size: 15px;
+}
+.use-off {
+  color: gray;
+  font-size: 12px;
+}
+.veg-nonvegs {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.veg-nonveg {
+  display: flex;
+}
+.veg-icon {
+  color: green;
+  border: 0.2px solid green;
+  padding: 2px;
+}
+.nonveg-icon {
+  color: red;
+  border: 0.2px solid red;
+  padding: 2px;
+}
+.addBtn {
+  text-align: center;
+  box-shadow: 0 0 2px 2px #ece9e7;
+  border-radius: 5px;
+  background-color: orangered;
+  border: 0.1px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.addBtn:hover {
+  background-color: rgb(72, 231, 63);
+  color: white;
+}
+.menu-img {
+  text-align: center;
+}
+.menuimage {
+  border-radius: 10px;
+}
+.menuimages {
+  border-radius: 10px;
+}
+.starrating {
+  font-size: 18px;
+  color: green;
+  font-weight: bolder;
+  text-align: center;
+}
+.restaurant-rating {
+  box-shadow: 0 0 5px 5px #ece9e7;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+.starratings {
+  font-size: 13px;
+  font-weight: bold;
+  color: gray;
+}
+
+.apply {
+  border: 2px dotted gray;
+  font-weight: bold;
+  text-align: center;
+}
+.apply:hover {
+  background-color: rgb(46, 143, 46);
+  color: white;
+}
+
+.billing {
+  font-size: 15px;
+  font-weight: 500;
+}
+.paybtn {
+  border: 0px solid gray;
+  background-color: orangered;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+.paybtn:hover {
+  border: 1px solid gainsboro;
+}
+.removeallitem {
+  border: 1px solid white;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.backtomenu {
+  border: 1px solid white;
+  background-color: orangered;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.sugges {
+  border: solid rgb(236, 232, 232);
+  color: gray;
+  font-size: 12px;
+  box-shadow: 0 0 1px 1px #ece9e7;
+}
+.description-biilingcart {
+  white-space: nowrap;
+  width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.addBtncart {
+  text-align: center;
+  box-shadow: 0 0 2px 2px #ece9e7;
+  border: 0.1px solid gray;
+  font-weight: bold;
+  border-radius: 4px;
+  background-color: white;
+  color: orangered;
+}
+.addBtncart:hover {
+  background-color: rgb(250, 248, 241);
+  color: green;
+}
+.addBtnremove {
+  font-weight: bolder;
+  color: red;
+}
+.cartbtn {
+  display: flex;
+  justify-content: space-between;
+}
+.foodpolicy {
+  border: 0.5px solid rgb(227, 223, 223);
+  padding: 10px;
+  margin-top: 15px;
+  text-align: left;
+}
+.polyciy {
+  font-size: 12px;
+  color: gray;
+}
+.polyciys {
+  color: red;
+  text-decoration: underline;
+  font-weight: 400;
+}
+.logonamaste:hover {
+  color: orangered;
+}
+.cartimg {
+  text-align: center;
+}
+.removeallitem {
+  margin-left: 36%;
+}
+hr.hrstyle {
+  border: 2px solid black;
+  color: black;
+}
+.social{
+  color: white;
+  font-size: 18px;
+  margin: 5px;
 }
