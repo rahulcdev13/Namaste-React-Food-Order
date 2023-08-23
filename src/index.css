@@ -1,3 +1,7 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -92,12 +96,13 @@ ul > li > Link {
   padding: 20px;
 } */
 .filterbtn {
-  border: 1px solid rgb(240, 46, 46);
+  border: 1px solid rgb(184, 181, 181);
   padding: 7px;
   text-align: center;
   border-radius: 30px;
   margin-right: 10px;
-  font-weight: 400;
+  font-size: 14px;
+  background-color: white;
 }
 .filterbtn:hover {
   color: white;

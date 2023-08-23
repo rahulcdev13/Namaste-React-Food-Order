@@ -84,7 +84,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link className="links" to="/about">
+              <Link className="links" to="/contact">
                 <FaUserCircle /> {loggedInUser}
               </Link>
             </li>

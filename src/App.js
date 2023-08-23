@@ -4,7 +4,7 @@ import Login from "./commonFiles/Login";
 import Header from "./commonFiles/Header";
 import Home from "./components/Home";
 import Contact from "./commonFiles/Contact";
-import Footer from "./commonFiles/Footer";
+// import Footer from "./commonFiles/Footer";
 import Error from "./commonFiles/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 import SearchBar from "./components/SearchBar";
@@ -56,7 +56,7 @@ const App = () => {
       </UserContext.Provider>
       <UserContext.Provider value={{ loggedInUser: "Rahul Chavan" }}>
         {/* Rahul Chavan */}
-        <Footer />
+        {/* <Footer /> */}
       </UserContext.Provider>
       </Provider>
     </>

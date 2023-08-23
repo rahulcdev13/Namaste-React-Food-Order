@@ -5,7 +5,7 @@ import { restListNew } from "../utils/common";
 import { FiSearch } from "react-icons/fi";
 import Shimmer from "./Shimmer";
 import useInternetConnection from "../hooks/useInternetConnection";
-import TikTokGame from "../Game/TikTokGame";
+import TikTokGame from "../game/TikTokGame";
 
 const Home = () => {
   const [restaurantList, setRestaurantList] = useState([]);
@@ -96,7 +96,7 @@ const Home = () => {
                   className="filterbtn"
                   onClick={handleTopratingRestaurant}
                 >
-                  Rating 4.0+{" "}
+                  Rating 4.0+
                   <span
                     className="fa fa-star filterbtnn"
                     style={{ color: "orange" }}
