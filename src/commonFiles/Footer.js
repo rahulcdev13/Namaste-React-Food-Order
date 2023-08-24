@@ -25,15 +25,14 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
   const { loggedInUser } = useContext(UserContext);
   const navigate = useNavigate();
-  return (
-    <div className="footer">
-      {/* <div className="footer-logo"> */}
-      {/* <img width="200px" height="80px" src={LOGO_IMG} alt="food-logo" /> */}
-      <p style={{ marginTop: "25px" }}>
-        Created by {loggedInUser} © 2023 Namaste React
-      </p>
-      <p className="social">
-        <span className="social" onClick={() => navigate({ GMAIL_URL })}>
+  return (<>
+    <div className="mt-5">
+    </div>
+    <div className="footer mt-5">
+      {/* <div className="footer-logo">
+      <img width="200px" height="80px" src={LOGO_IMG} alt="food-logo" /> */}
+      <p className="social p-2">
+        Created by {loggedInUser} © 2023 Namaste React  <span className="social" onClick={() => navigate({ GMAIL_URL })}>
           <BiLogoGmail to={GMAIL_URL} />
         </span>
         <span className="social" onClick={() => navigate({LINKEDIN_URL})}>
@@ -53,12 +52,10 @@ const Footer = () => {
         </span>
         <span className="social" onClick={() => navigate(YOUTUBE_URL)}>
           <TiSocialYoutube />
-        </span>
-        <span className="social">
-          <a href="https://www.youtube.com/watch?v=rWFahgbHiqc" target="_youtube_link" rel="noopener noreferrer"><TiSocialYoutube /></a>
-        </span>
+        </span> 
       </p>
     </div>
+    </>
   );
 };
 

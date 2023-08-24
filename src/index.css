@@ -202,6 +202,9 @@ ul > li {
 /* Footer CSS */
 .footer {
   padding: 5px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
   background-color: rgb(5, 5, 5);
   color: white;
@@ -452,8 +455,13 @@ hr.hrstyle {
   border: 2px solid black;
   color: black;
 }
-.social{
+.social {
   color: white;
   font-size: 18px;
   margin: 5px;
+}
+/* Offers CSS */
+.offerTitle {
+  font-size: 25px;
+  font-weight: bolder;
 }

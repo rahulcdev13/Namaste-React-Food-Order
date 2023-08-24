@@ -4,13 +4,14 @@ import { AiOutlineStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const RestaurantCardList = (restdetails) => {
-  const { cloudinaryImageId, name, avgRating, cuisines, costForTwo, areaName } =
-    restdetails?.info;
+  // const { cloudinaryImageId, name, avgRating, cuisines, costForTwo, areaName } =
+  //   restdetails?.info;
 
+  // console.log(restdetails);
   // const { header, subHeader } = restdetails?.info?.aggregatedDiscountInfoV3;
 
   const avgrating = {
-    backgroundColor: avgRating >= 4 ? "green" : "orange",
+    backgroundColor: restdetails?.info?.avgRating >= 4 ? "green" : "orange",
   };
   return (
     <div className="col-md-3">
@@ -22,25 +23,25 @@ const RestaurantCardList = (restdetails) => {
           <div className="img-container">
             <img
               className="card-img-top"
-              src={IMG_CDN_URL + cloudinaryImageId}
+              src={IMG_CDN_URL + restdetails?.info?.cloudinaryImageId}
               alt="foodimg"
             />
             <p className="offer">
-              {/* {header} {subHeader} */}
+              {restdetails?.info?.aggregatedDiscountInfoV3?.header} {restdetails?.info?.aggregatedDiscountInfoV3?.subHeader}
             </p>
           </div>
           <div className="card-bodys">
             <div className="foodHeading">
               <h6 className="avgrating" style={avgrating}>
-                {avgRating}
+                {restdetails?.info?.avgRating}
                 <AiOutlineStar style={{ marginBottom: "4px" }} />
               </h6>
-              <h5 className="card-title">{name}</h5>
+              <h5 className="card-title">{restdetails?.info?.name}</h5>
             </div>
-            <h6 className="cuisines">{cuisines.join(", ")}</h6>
-            <h6>{costForTwo}</h6>
+            <h6 className="cuisines">{restdetails?.info?.cuisines.join(", ")}</h6>
+            <h6>{restdetails?.info?.costForTwo}</h6>
             <h6 className="card-text">
-              <small className="text-muted">{areaName}</small>
+              <small className="text-muted">{restdetails?.info?.areaName}</small>
             </h6>
           </div>
         </div>

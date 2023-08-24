@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { MENU_ITEM_IMG } from "../utils/common";
 import { FaDotCircle } from "react-icons/fa";
@@ -11,6 +11,7 @@ import { clearItems, removeItems } from "../reduxToolkit/cartSlice";
 import Emptycart from "../commonFiles/Emptycart"
 
 const Cart = () => {
+  const [count,setCounter] = useState(1);
   const cartItems = useSelector((store) => store.cart.items);
   // console.log(cartItems);
   const navigate = useNavigate();
@@ -115,7 +116,7 @@ const Cart = () => {
                               {description}
                             </h6>
                             <button className="addBtncart">
-                              <BiMinus /> 2 <BiPlus />
+                              <BiMinus onClick={()=>setCounter(count-1)} /> {count} <BiPlus onClick={()=>setCounter(count+1)} />
                             </button>
                           </div>
                         </div>
