@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Namaste-React-Food-Order/static/css/main.5762b016.css",
+    "main.js": "/Namaste-React-Food-Order/static/js/main.4f784d10.js",
+    "static/js/767.84e6bd7e.chunk.js": "/Namaste-React-Food-Order/static/js/767.84e6bd7e.chunk.js",
+    "index.html": "/Namaste-React-Food-Order/index.html",
+    "main.5762b016.css.map": "/Namaste-React-Food-Order/static/css/main.5762b016.css.map",
+    "main.4f784d10.js.map": "/Namaste-React-Food-Order/static/js/main.4f784d10.js.map",
+    "767.84e6bd7e.chunk.js.map": "/Namaste-React-Food-Order/static/js/767.84e6bd7e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5762b016.css",
+    "static/js/main.4f784d10.js"
+  ]
+}
