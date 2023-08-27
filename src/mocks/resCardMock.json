@@ -84,10 +84,5 @@
         "reviewsSummary": {},
         "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
         "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-        "link": "https://www.swiggy.com/restaurants/bebe-di-rasoi-punjabi-amanora-mall-hadapsar-pune-162204",
-        "type": "WEBLINK"
-    }
+    } 
 }

@@ -5,7 +5,7 @@ import { restListNew } from "../utils/common";
 import { FiSearch } from "react-icons/fi";
 import Shimmer from "./Shimmer";
 import useInternetConnection from "../hooks/useInternetConnection";
-import TikTokGame from "../game/TikTokGame";
+// import TikTokGame from "../game/TikTokGame";
 
 const Home = () => {
   const [restaurantList, setRestaurantList] = useState([]);
@@ -39,7 +39,7 @@ const Home = () => {
     return (
       <p style={{ textAlign: "center", marginTop: "15px", color: "red" }}>
         When internet Status is off 🔴 Play this tik-tak-toe game till the connection comes..🚀
-         <TikTokGame />
+         {/* <TikTokGame /> */}
       </p>
     );
   }
