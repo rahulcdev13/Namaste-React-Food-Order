@@ -21,7 +21,7 @@ const Home = () => {
     try {
       const response = await fetch(restListNew);
       const json = await response.json();
-      // console.log(json.data);
+      console.log(json.data);
       let checkData =
         json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants;
@@ -38,8 +38,9 @@ const Home = () => {
   if (internetStatus === false) {
     return (
       <p style={{ textAlign: "center", marginTop: "15px", color: "red" }}>
-        When internet Status is off 🔴 Play this tik-tak-toe game till the connection comes..🚀
-         {/* <TikTokGame /> */}
+        When internet Status is off 🔴 Play this tik-tak-toe game till the
+        connection comes..🚀
+        {/* <TikTokGame /> */}
       </p>
     );
   }
@@ -137,13 +138,20 @@ const Home = () => {
           </div>
           <hr></hr>
           <div className="row">
-            {searchFilter?.map((restdetails,id) => {
+            {searchFilter?.map((restdetails) => {
+              // console.log("helllo" +restdetails?.info?.name);
               return (
                 <>
-                  {restdetails?.info.isOpen ? (
-                    <RestaurantCardPromoted key={restdetails.info.isOpen} {...restdetails} />
+                  {restdetails?.info?.isOpen ? (
+                    <RestaurantCardPromoted
+                      key={restdetails?.info?.isOpen}
+                      {...restdetails}
+                    />
                   ) : (
-                    <RestaurantCardList key={restdetails.info.name} {...restdetails} />
+                    <RestaurantCardList
+                      key={restdetails?.info?.name}
+                      {...restdetails}
+                    />
                   )}
                 </>
               );

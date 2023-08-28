@@ -10,6 +10,9 @@ const RestaurantCardList = (restdetails) => {
   // console.log(restdetails);
   // const { header, subHeader } = restdetails?.info?.aggregatedDiscountInfoV3;
 
+  // console.log(restdetails);
+  
+  
   const avgrating = {
     backgroundColor: restdetails?.info?.avgRating >= 4 ? "green" : "orange",
   };
